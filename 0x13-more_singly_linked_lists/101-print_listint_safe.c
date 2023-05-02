@@ -21,14 +21,14 @@ size_t looped_listint_len(const listint_t *head)
 	return (0);
 
 	dog = head->next;
-	hcat = (head->next)->next;
+	cat = (head->next)->next;
 
 	while (cat)
 	{
 		if (dog == cat)
 		{
 			dog = head;
-			while (cat != cat)
+			while (dog != cat)
 			{
 				nodes++;
 				dog = dog->next;
